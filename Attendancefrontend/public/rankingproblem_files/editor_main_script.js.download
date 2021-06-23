@@ -1,0 +1,573 @@
+/**
+ * JSON Object storing the required info about modes
+ * @author Ashik A
+ */
+var mode_details = {
+    "c" :{
+        extension: "c",
+        storage_key: "clike",
+        path: "./JS/code_editor/c_cpp_java/clike.js",
+        mode: {"name":"clike","keywords":{"auto":true,"if":true,"break":true,"case":true,"register":true,"continue":true,"return":true,"default":true,"do":true,"sizeof":true,"static":true,"else":true,"struct":true,"switch":true,"extern":true,"typedef":true,"union":true,"for":true,"goto":true,"while":true,"enum":true,"const":true,"volatile":true},"types":{"int":true,"long":true,"char":true,"short":true,"double":true,"float":true,"unsigned":true,"signed":true,"void":true,"size_t":true,"ptrdiff_t":true,"bool":true,"_Complex":true,"_Bool":true,"float_t":true,"double_t":true,"intptr_t":true,"intmax_t":true,"int8_t":true,"int16_t":true,"int32_t":true,"int64_t":true,"uintptr_t":true,"uintmax_t":true,"uint8_t":true,"uint16_t":true,"uint32_t":true,"uint64_t":true},"blockKeywords":{"case":true,"do":true,"else":true,"for":true,"if":true,"switch":true,"while":true,"struct":true},"defKeywords":{"struct":true},"typeFirstDefinitions":true,"atoms":{"NULL":true,"true":true,"false":true},"hooks":{},"modeProps":{"fold":["brace","include"]},"helperType":"text/x-csrc"}
+    },
+    "cpp" : {
+        extension: "cpp",
+        storage_key: "clike",
+        path: "./JS/code_editor/c_cpp_java/clike.js",
+        //mode: {"name":"clike","keywords":{"auto":true,"if":true,"break":true,"case":true,"register":true,"continue":true,"return":true,"default":true,"do":true,"sizeof":true,"static":true,"else":true,"struct":true,"switch":true,"extern":true,"typedef":true,"union":true,"for":true,"goto":true,"while":true,"enum":true,"const":true,"volatile":true,"asm":true,"dynamic_cast":true,"namespace":true,"reinterpret_cast":true,"try":true,"explicit":true,"new":true,"static_cast":true,"typeid":true,"catch":true,"operator":true,"template":true,"typename":true,"class":true,"friend":true,"private":true,"this":true,"using":true,"const_cast":true,"inline":true,"public":true,"throw":true,"virtual":true,"delete":true,"mutable":true,"protected":true,"alignas":true,"alignof":true,"constexpr":true,"decltype":true,"nullptr":true,"noexcept":true,"thread_local":true,"final":true,"static_assert":true,"override":true},"types":{"int":true,"long":true,"char":true,"short":true,"double":true,"float":true,"unsigned":true,"signed":true,"void":true,"size_t":true,"ptrdiff_t":true,"bool":true,"wchar_t":true},"blockKeywords":{"catch":true,"class":true,"do":true,"else":true,"finally":true,"for":true,"if":true,"struct":true,"switch":true,"try":true,"while":true},"defKeywords":{"class":true,"namespace":true,"struct":true,"enum":true,"union":true},"typeFirstDefinitions":true,"atoms":{"true":true,"false":true,"NULL":true},"dontIndentStatements":{},"isIdentifierChar":{},"hooks":{},"namespaceSeparator":"::","modeProps":{"fold":["brace","include"]},"helperType":"text/x-c++src"}
+        mode: {"name":"clike","keywords":{"auto":true,"if":true,"break":true,"case":true,"register":true,"continue":true,"return":true,"default":true,"do":true,"sizeof":true,"static":true,"else":true,"struct":true,"switch":true,"extern":true,"typedef":true,"union":true,"for":true,"goto":true,"while":true,"enum":true,"const":true,"volatile":true},"types":{"int":true,"long":true,"char":true,"short":true,"double":true,"float":true,"unsigned":true,"signed":true,"void":true,"size_t":true,"ptrdiff_t":true,"bool":true,"_Complex":true,"_Bool":true,"float_t":true,"double_t":true,"intptr_t":true,"intmax_t":true,"int8_t":true,"int16_t":true,"int32_t":true,"int64_t":true,"uintptr_t":true,"uintmax_t":true,"uint8_t":true,"uint16_t":true,"uint32_t":true,"uint64_t":true},"blockKeywords":{"case":true,"do":true,"else":true,"for":true,"if":true,"switch":true,"while":true,"struct":true},"defKeywords":{"struct":true},"typeFirstDefinitions":true,"atoms":{"NULL":true,"true":true,"false":true},"hooks":{},"modeProps":{"fold":["brace","include"]},"helperType":"text/x-csrc"}
+    },
+    "cs" : {
+        extension: "cs",
+        storage_key: "clike",
+        path: "./JS/code_editor/c_cpp_java/clike.js",
+        mode: {"name":"clike","keywords":{"abstract":true,"as":true,"async":true,"await":true,"base":true,"break":true,"case":true,"catch":true,"checked":true,"class":true,"const":true,"continue":true,"default":true,"delegate":true,"do":true,"else":true,"enum":true,"event":true,"explicit":true,"extern":true,"finally":true,"fixed":true,"for":true,"foreach":true,"goto":true,"if":true,"implicit":true,"in":true,"interface":true,"internal":true,"is":true,"lock":true,"namespace":true,"new":true,"operator":true,"out":true,"override":true,"params":true,"private":true,"protected":true,"public":true,"readonly":true,"ref":true,"return":true,"sealed":true,"sizeof":true,"stackalloc":true,"static":true,"struct":true,"switch":true,"this":true,"throw":true,"try":true,"typeof":true,"unchecked":true,"unsafe":true,"using":true,"virtual":true,"void":true,"volatile":true,"while":true,"add":true,"alias":true,"ascending":true,"descending":true,"dynamic":true,"from":true,"get":true,"global":true,"group":true,"into":true,"join":true,"let":true,"orderby":true,"partial":true,"remove":true,"select":true,"set":true,"value":true,"var":true,"yield":true},"types":{"Action":true,"Boolean":true,"Byte":true,"Char":true,"DateTime":true,"DateTimeOffset":true,"Decimal":true,"Double":true,"Func":true,"Guid":true,"Int16":true,"Int32":true,"Int64":true,"Object":true,"SByte":true,"Single":true,"String":true,"Task":true,"TimeSpan":true,"UInt16":true,"UInt32":true,"UInt64":true,"bool":true,"byte":true,"char":true,"decimal":true,"double":true,"short":true,"int":true,"long":true,"object":true,"sbyte":true,"float":true,"string":true,"ushort":true,"uint":true,"ulong":true},"blockKeywords":{"catch":true,"class":true,"do":true,"else":true,"finally":true,"for":true,"foreach":true,"if":true,"struct":true,"switch":true,"try":true,"while":true},"defKeywords":{"class":true,"interface":true,"namespace":true,"struct":true,"var":true},"typeFirstDefinitions":true,"atoms":{"true":true,"false":true,"null":true},"hooks":{},"helperType":"text/x-csharp"}
+    },
+    /*"java7" : {
+        extension: "java7",
+        storage_key: "clike",
+        path: "./JS/code_editor/c_cpp_java/clike.js",
+        mode: {"name":"clike","keywords":{"abstract":true,"assert":true,"break":true,"case":true,"catch":true,"class":true,"const":true,"continue":true,"default":true,"do":true,"else":true,"enum":true,"extends":true,"final":true,"finally":true,"float":true,"for":true,"goto":true,"if":true,"implements":true,"import":true,"instanceof":true,"interface":true,"native":true,"new":true,"package":true,"private":true,"protected":true,"public":true,"return":true,"static":true,"strictfp":true,"super":true,"switch":true,"synchronized":true,"this":true,"throw":true,"throws":true,"transient":true,"try":true,"volatile":true,"while":true,"@interface":true},"types":{"byte":true,"short":true,"int":true,"long":true,"float":true,"double":true,"boolean":true,"char":true,"void":true,"Boolean":true,"Byte":true,"Character":true,"Double":true,"Float":true,"Integer":true,"Long":true,"Number":true,"Object":true,"Short":true,"String":true,"StringBuffer":true,"StringBuilder":true,"Void":true},"blockKeywords":{"catch":true,"class":true,"do":true,"else":true,"finally":true,"for":true,"if":true,"switch":true,"try":true,"while":true},"defKeywords":{"class":true,"interface":true,"enum":true,"@interface":true},"typeFirstDefinitions":true,"atoms":{"true":true,"false":true,"null":true},"number":{},"hooks":{},"modeProps":{"fold":["brace","import"]},"helperType":"text/x-java"}
+    },*/
+    "java8" : {
+        extension: "java8",
+        storage_key: "clike",
+        path: "./JS/code_editor/c_cpp_java/clike.js",
+        mode: {"name":"clike","keywords":{"abstract":true,"assert":true,"break":true,"case":true,"catch":true,"class":true,"const":true,"continue":true,"default":true,"do":true,"else":true,"enum":true,"extends":true,"final":true,"finally":true,"float":true,"for":true,"goto":true,"if":true,"implements":true,"import":true,"instanceof":true,"interface":true,"native":true,"new":true,"package":true,"private":true,"protected":true,"public":true,"return":true,"static":true,"strictfp":true,"super":true,"switch":true,"synchronized":true,"this":true,"throw":true,"throws":true,"transient":true,"try":true,"volatile":true,"while":true,"@interface":true},"types":{"byte":true,"short":true,"int":true,"long":true,"float":true,"double":true,"boolean":true,"char":true,"void":true,"Boolean":true,"Byte":true,"Character":true,"Double":true,"Float":true,"Integer":true,"Long":true,"Number":true,"Object":true,"Short":true,"String":true,"StringBuffer":true,"StringBuilder":true,"Void":true},"blockKeywords":{"catch":true,"class":true,"do":true,"else":true,"finally":true,"for":true,"if":true,"switch":true,"try":true,"while":true},"defKeywords":{"class":true,"interface":true,"enum":true,"@interface":true},"typeFirstDefinitions":true,"atoms":{"true":true,"false":true,"null":true},"number":{},"hooks":{},"modeProps":{"fold":["brace","import"]},"helperType":"text/x-java"}
+    },
+    "java" : {
+        extension: "java8",
+        storage_key: "clike",
+        path: "./JS/code_editor/c_cpp_java/clike.js",
+        mode: {"name":"clike","keywords":{"abstract":true,"assert":true,"break":true,"case":true,"catch":true,"class":true,"const":true,"continue":true,"default":true,"do":true,"else":true,"enum":true,"extends":true,"final":true,"finally":true,"float":true,"for":true,"goto":true,"if":true,"implements":true,"import":true,"instanceof":true,"interface":true,"native":true,"new":true,"package":true,"private":true,"protected":true,"public":true,"return":true,"static":true,"strictfp":true,"super":true,"switch":true,"synchronized":true,"this":true,"throw":true,"throws":true,"transient":true,"try":true,"volatile":true,"while":true,"@interface":true},"types":{"byte":true,"short":true,"int":true,"long":true,"float":true,"double":true,"boolean":true,"char":true,"void":true,"Boolean":true,"Byte":true,"Character":true,"Double":true,"Float":true,"Integer":true,"Long":true,"Number":true,"Object":true,"Short":true,"String":true,"StringBuffer":true,"StringBuilder":true,"Void":true},"blockKeywords":{"catch":true,"class":true,"do":true,"else":true,"finally":true,"for":true,"if":true,"switch":true,"try":true,"while":true},"defKeywords":{"class":true,"interface":true,"enum":true,"@interface":true},"typeFirstDefinitions":true,"atoms":{"true":true,"false":true,"null":true},"number":{},"hooks":{},"modeProps":{"fold":["brace","import"]},"helperType":"text/x-java"}
+    },
+    /*"javascript" :{
+        extension: "js",
+        storage_key: "javascript",
+        path: "./JS/code_editor/javascript/javascript.js",
+        mode: {name: "javascript", json: true}
+    },*/
+    "python2" :{
+        extension: "py2",
+        storage_key: "python",
+        path: "./JS/code_editor/python/python.js",
+        mode: {name: "python"}
+    },
+    "python3" :{
+        extension: "py3",
+        storage_key: "python",
+        path: "./JS/code_editor/python/python.js",
+        mode: {name: "python"}
+    },
+    "php" : {
+        extension: "php",
+        storage_key: "php",
+        path: "./JS/code_editor/php/php.js",
+        mode: {name: "python"}
+    },
+    "perl" : {
+        extension: "pl",
+        storage_key: "perl",
+        path: "./JS/code_editor/perl/perl.js",
+        mode: {name: "perl", json: true}
+    },
+    "ruby" : {
+        extension: "rb",
+        storage_key: "ruby",
+        path: "./JS/code_editor/ruby/ruby.js",
+        mode: {name: "ruby"}
+    }
+};
+
+var code_editor;
+var settings = {
+    "value" : "",
+    "mode" : {
+        "name" : "javascript"
+    },
+    "lineNumbers" : true,
+    "scrollbarStyle" : "simple"
+};
+
+var attributions_details = {
+    "enabled" : false,
+    "links" : "",
+    "comments" : ""
+};
+var other_info = {};
+
+$(document).ready(()=>{
+    code_editor = CodeMirror($('.module .editor')[0],settings);
+    code_editor.setSize("100%","500");
+    populate($('.hidden-pre-sub-content'),$('.pre-submission-container'));
+    retrieve(true);
+    
+    var prefLang = get_saved_data('prefLang') == null || get_saved_data('prefLang') == undefined ? null : get_saved_data('prefLang');
+    //console.log("prefLang="+prefLang);
+    //alert("prefLang="+prefLang);
+    if(prefLang == null || prefLang==undefined || prefLang==''){
+    change_mode("c");
+    }
+    else{
+    change_mode(prefLang);
+    $('.menu #prog_mode').val(prefLang);
+    }
+    /**
+     * 
+     */
+    code_editor.on("optionChange", ()=>{
+        console.log('option Changed');
+        window.sessionStorage.setItem("prefLang","");
+    });
+
+    code_editor.on("change", ()=>{
+        $('.action-buttons-section button#save').html('Save (Local)');
+    });
+
+    /**
+     * Event listener that listens to the Programming Mode Change
+     * @author Ashik A
+     */
+    $('.menu #prog_mode').change(function(){
+        console.log($('.menu #prog_mode > option:selected'));
+        var mode = $('.menu #prog_mode > option:selected').val();
+        change_mode(mode);
+       
+        set_saved_data('prefLang',mode);
+    });
+
+    //Disable the Special Characters in Program Name
+    $('.pre-submission-container .file-name-settings input#prg_name').on("keypress", (event)=>{
+        var key = event.which;
+        if(key > 47 && key < 58){
+            // Just Numbers
+            return;
+        }
+        else if((key > 64 && key < 91) || (key > 96 && key < 123)){
+            //Just alphabets
+            return;
+        }
+        else if(key == 95){
+            //Just Underscore
+            return; 
+        }
+        else{
+            event.preventDefault();
+        }
+    });
+
+    $('#attributions').change(function(){
+        if($(this).is(':checked')) {
+            $('.attribution_section_container').removeClass('disabled');
+            $('.attribution_section_container #links').val(attributions_details.links);
+            $('.attribution_section_container #comments').val(attributions_details.comments);
+        }
+        else {
+            $('.attribution_section_container').addClass('disabled');
+            $('.attribution_section_container #links').val('');
+            $('.attribution_section_container #comments').val('');
+        }
+    });
+});
+
+/**
+     * Function that responds to the Programming Mode Change
+     * @author Ashik A
+     */
+function change_mode(mode){
+    console.log('Called : ' + mode);
+    var key = mode_details[mode].storage_key;
+    var data = get_saved_data(key) == null || get_saved_data(key) == undefined ? null : get_saved_data(key);
+    if(data == null){
+        var path = mode_details[mode].path;
+        
+        if(path == null){
+            console.log('Not Matching any Language');
+            return;
+        }
+
+        $.get(path,(result)=>{
+            data = result;
+            set_saved_data(key,result);
+            $('.resource_syntax_highlight').remove();
+            var resource = $('<script class="resource_syntax_highlight"></script>');
+            resource.html(data);
+            $('head').append(resource);
+            code_editor.setOption('mode',mode_details[mode].mode);
+        });
+    }
+    else{
+        $('.resource_syntax_highlight').remove();
+        var resource = $('<script class="resource_syntax_highlight"></script>');
+            resource.html(data);
+            $('head').append(resource);
+            code_editor.setOption('mode',mode_details[mode].mode);
+    }
+    //console.log(CodeMirror.mimeModes);
+    //console.log(JSON.stringify(CodeMirror.mimeModes["text/x-php"]));
+    $('.main-content .pre-submission-container .file-name-settings .form-group > input#ext').val(mode_details[mode].extension);
+}
+
+function get_saved_data(key){
+    return window.sessionStorage.getItem(key);
+}
+function set_saved_data(key,value){CodeMirror.mimeModes
+    window.sessionStorage.setItem(key,value);
+}
+
+/**
+ * Function that requests the server to compile the Code (Public Tests)
+ * @author Ashik A
+ */
+function compile(){
+	//alert("attributions_details.links="+attributions_details.links);
+	//Modified to return value for attribution (Nisha)
+	var saveFlag = save();
+	//alert('save value : '+saveFlag);
+    if(saveFlag) {
+    var data = new FormData();
+	//alert('Pre='+peText);
+	//alert('Post='+poText);
+	//here the variables used named prefix and suffix are declared and initialised in code_editor.jsp, these are for questions which would have utmost 2 uneditable code blocks
+	var entireCode = prefix + '\n' + code_editor.getValue() + '\n' + suffix ;
+	//alert('Code Submitted='+entireCode);
+    //data.append("textareae",code_editor.getValue());
+	data.append("textareae",entireCode);
+    //other_info.textareae = code_editor.getValue();
+	other_info.textareae = entireCode;
+    data.append("problemid",problemID + '');
+    other_info.problemid = problemID + '';
+    data.append("extension",'.' + $('#ext').val().trim());
+    other_info.extension = $('#ext').val().trim();
+    data.append("filename",$('#prg_name').val().trim());
+    other_info.filename = $('#prg_name').val().trim();
+    data.append("submitvalue","submit");
+    data.append("confirm", attributions_details.enabled);
+    other_info.confirm = attributions_details.enabled;
+    data.append("links",attributions_details.links);
+    other_info.links = attributions_details.links;
+	//alert("attributions_details.links="+attributions_details.links);
+    data.append("comments",attributions_details.comments);
+    other_info.comments = attributions_details.comments;
+    var jsonData = {};
+    data.forEach(function(value,key){
+        jsonData[key] = value;
+    });
+    //console.log(jsonData);
+    populate($('.hidden-loader'),$('.pre-submission-container'));
+    $.ajax({
+        url: './ExecuteServlet',
+		type: 'POST',
+        data: jsonData,
+        success: function(response){
+            $('.pre-submission-container .loader-1 .text').html('Fetching Results');
+            console.log(response);
+            if(typeof response === "string") response = JSON.parse(response);
+            setTimeout(()=>{
+                populate($('.hidden-post-submission-summary'),$('.pre-submission-container'));
+                $('.pre-submission-container .submission_notification .actions .other-info > span:first-child').html('');
+                $('.pre-submission-container .submission_notification').removeClass('success error');
+                $('.pre-submission-container .submission_notification').addClass(response.type);
+                $('.pre-submission-container .submission_notification .info > h2').html(response.msg);
+                if(response.type.localeCompare('success') == 0){
+                    $('.pre-submission-container .submission_notification .graphic img').attr('src','./images/svgs/happy.svg');
+                    $('.pre-submission-container .submission_notification .graphic .short-msg').html('Yayy!');
+                    $('.pre-submission-container .submission_notification .actions .other-info').html('<span> </span><span class="btns"><span class="button_red" onclick="closeEverythin()">Okay</span></span>');
+                }
+                else if(response.type.localeCompare('warning') == 0){
+                    $('.pre-submission-container .submission_notification .graphic img').attr('src','./images/svgs/happy.svg');
+                    $('.pre-submission-container .submission_notification .graphic .short-msg').html('Hmm...');
+                    $('.pre-submission-container .submission_notification .actions .other-info').html('<span> </span><span class="btns"><span class="button_red" onclick="closeEverythin()">Lets Try Again</span></span>');
+                }
+                else{
+                    $('.pre-submission-container .submission_notification .graphic img').attr('src','./images/svgs/sad.svg');
+                    $('.pre-submission-container .submission_notification .graphic .short-msg').html('Oh No!');
+                    $('.pre-submission-container .submission_notification .actions .other-info').html('<span> </span><span class="btns"><span class="button_red" onclick="closeEverythin()">Lets Try Again</span></span>');
+                }
+                if(response.executiontime != undefined){
+                    var compile_con = $('<div class="form_content"></div>');
+                        compile_con.append('<label>Execution Time</label>');
+                        compile_con.append('<span>'+response.executiontime+' sec</span>');
+                        $('.pre-submission-container .submission_notification .actions .other-info > span:first-child').append(compile_con);
+                }
+                if(response.compile != undefined){
+                    var compile_con = $('<div class="form_content" style="grid-column: span 2"></div>');
+                        compile_con.append('<label>Compilation Command</label>');
+                        compile_con.append('<span>'+response.compile+'</span>');
+                        $('.pre-submission-container .submission_notification .actions .other-info > span:first-child').append(compile_con);
+                }
+                if(response.submsg != undefined){
+                    var compile_con = $('<div class="form_content" style="grid-column: span 3"></div>');
+                        compile_con.append('<label>Details</label>');
+                        compile_con.append('<span>'+response.submsg+'</span>');
+                        $('.pre-submission-container .submission_notification .actions .other-info > span:first-child').append(compile_con);
+                }
+                /**
+                 * Part of Function where it fetches the Public Testcase Details
+                 */
+                if(response.type.localeCompare("success")== 0){
+                    $.ajax({
+                        url: './CodeEditorService',
+                        data:{
+                            "request_type" : "get_submission_n",
+                            "submission_id" : response.submissionID,
+                            "problem_id" : response.problemid
+                        },
+                        type: "post",
+                        success: (response) => {
+                            console.log(response);
+                            var details = $('.post-sub-result-details');
+                            details.css('display','grid');
+                            details.html('');
+                            var table = $('<div class="table"></div>');
+                            table.append('<div class="row"><span class="col">TestCase no</span><span class="col">Status</span><span class="col">Expected Output</span></div>');
+                            for(var i=0;i<response.details.length;i++){
+                                var row = $('<div class="row"></div>');
+                                row.append('<span class="col">'+(i+1)+'</span>');
+                                row.append('<span class="col">'+response.details[i]['PTCM_TESTCASESTATUS']+'</span>');
+                                row.append('<pre><span class="col">'+response.details[i]['PTCM_EXPECTEDOUTPUT']+'</span></pre>');
+                                table.append(row);
+                            }
+                            details.append(table);
+                            details.append('<section class="' + response.final_answer.replace(' ','').trim().toLowerCase() + '"><h1>'+response.final_answer+'</h1><button class="submit_answer_button" onclick="finalSubmit()">Submit (Final)</button></section>');
+                        }
+                    });
+                }
+            },1000);
+        }
+    });
+    }else{
+    	console.log('In else of save in online editor');
+    }
+}
+
+/**
+ * Function that saves the code in a local storage variable
+ * @author Ashik A
+ */
+function save(){
+	var linksValue = '';
+	var hasAttributions = $('.attribution_section_container').hasClass('disabled') ? false : true;
+	if(hasAttributions)
+	{
+		$('span.tagit-label').each(function(){
+			linksValue = linksValue + $(this).text() + ',';
+		});
+		if(linksValue.indexOf(',')>-1)
+		{
+			linksValue = linksValue.substring(0,(linksValue.length)-1);
+		}
+		//alert('linksValue='+linksValue);
+	}
+	
+	if(!hasAttributions || linksValue!='')
+	{
+		var question_info = {
+			"userid" : userid,
+			"code" : code_editor.getValue(),
+			"question" : problemID + '',
+			"contest_end_time" : contestEndTime,
+			"file_name" : $('.file-name-settings #prg_name').val(),
+			"extension" : $('.file-name-settings #ext').val(),
+			"attr_links" : linksValue,
+			"attr_comments" : $('.attribution_section_container #comments').val()
+		}
+		
+		//attributions_details.links = $('.attribution_section_container #links').val();
+		attributions_details.links = linksValue;
+		//console.log($('.attribution_section_container #links').text());
+		//console.log($('#links').tagit('assignedTags') );
+		attributions_details.comments = $('.attribution_section_container #comments').val();
+		attributions_details.enabled =  $('.attribution_section_container').hasClass('disabled') ? false : true;
+
+		console.log(contestEndTime);
+		window.localStorage.setItem(userid + "_question_" + problemID, JSON.stringify(question_info));
+		$('.action-buttons-section button#save').html('Saved!');
+		return true; //Modified to return value for attribution (Nisha)
+	}
+	else{
+		//alert('Kindly provide valid attributions if you have taken help from online sources.');
+		$('body').notification("error","Kindly provide valid attributions if you have taken help from online sources.");
+		return false; //Modified to return value for attribution (Nisha)
+	}
+}
+
+function retrieve(getProgramAlso){
+    var question_code_var = JSON.parse(window.localStorage.getItem(userid + "_question_" + problemID));
+    if(question_code_var != undefined && question_code_var.userid.localeCompare(userid) == 0 && question_code_var.contest_end_time.localeCompare("null") != 0){
+        var date_vars = question_code_var.contest_end_time.split(' ')[0].split('-');
+        var time_vars = question_code_var.contest_end_time.split(' ')[1].split(':');
+        console.log(date_vars);
+        var currentDate = new Date(), contest_end_date = new Date(date_vars[0],(parseInt( date_vars[1]) - 1), date_vars[2], time_vars[0], time_vars[1], time_vars[2], "0");
+        console.log(question_code_var);
+        if(currentDate.getTime() < contest_end_date.getTime()){
+            if(getProgramAlso) code_editor.setValue(question_code_var.code);
+            $('.file-name-settings #prg_name').val(question_code_var.file_name);
+            $('.file-name-settings #ext').val(question_code_var.extension);
+			//alert('Got this='+question_code_var.attr_links);
+			var allLinks = question_code_var.attr_links.split(',');
+			//alert('allLinks[0]='+allLinks[0]);
+            //$('.attribution_section_container #links').val(question_code_var.attr_links);
+			//$("#links").tagit("createTag", allLinks[0]);
+			$("#links").tagit({
+				availableTags: allLinks
+			});
+			for(var k=0;k<allLinks.length;k++)
+			{
+				$("#links").tagit("createTag", allLinks[k]);
+			}
+            $('.attribution_section_container #comments').val(question_code_var.attr_comments);
+            attributions_details.links = question_code_var.attr_links;
+            attributions_details.comments = question_code_var.attr_comments;
+        }
+    }
+    check_for_validity__program_name();
+}
+
+/**
+ * Function that populates the content from source to destination
+ * @author Ashik A
+ * @param {*} container_source 
+ * @param {*} container_destination 
+ */
+function populate(container_source, container_destination){
+    $(container_destination).html($(container_source).html());
+}
+
+function closeEverythin(){ 
+    populate($('.hidden-pre-sub-content'),$('.pre-submission-container')); 
+    $('#attributions').change(function(){
+        if($(this).is(':checked')) {
+            $(this).prop('checked',true);
+            $('.attribution_section_container').removeClass('disabled');
+            $('.attribution_section_container #links').val(attributions_details.links);
+            $('.attribution_section_container #comments').val(attributions_details.comments);
+        }
+        else {
+            $(this).prop('checked',false);
+            $('.attribution_section_container').addClass('disabled');
+            $('.attribution_section_container #links').val('');
+            $('.attribution_section_container #comments').val('');
+        }
+    });
+    attributions_details.enabled ? $('#attributions').prop('checked',true) : $('#attributions').prop('checked',false);
+    $('.post-sub-result-details').css('display','none');
+    retrieve(false);
+    
+    initializeAttributionsUI();
+}
+
+function finalSubmit(){
+    var data = new FormData();
+    data.append("textareae",other_info.textareae);
+    data.append("problemid",other_info.problemid);
+    data.append("extension",'.' + other_info.extension);
+    data.append("filename",other_info.filename);
+    data.append("submitvalue","submit");
+    data.append("confirm",other_info.confirm);
+    data.append("links", other_info.links);
+    data.append("comments", other_info.comments);
+    var jsonData = {};
+    data.forEach(function(value,key){
+        jsonData[key] = value;
+    });
+    $('.post-sub-result-details').css('display','none');
+    populate($('.hidden-loader'),$('.pre-submission-container'));
+    $('.pre-submission-container .loader-1 .text').html('Submission in Progress ...');
+    $.ajax({
+        url: './SubmitServlet',
+        type: 'post',
+        data: jsonData,
+        success: function(response){
+            if(typeof response === "string") response = JSON.parse(response);
+            $('.pre-submission-container .loader-1 .text').html('Fetching Results');
+            setTimeout(()=>{
+                populate($('.hidden-post-submission-summary'),$('.pre-submission-container'));
+                $('.pre-submission-container .submission_notification .actions .other-info > span:first-child').html('');
+                $('.pre-submission-container .submission_notification').removeClass('success error');
+                $('.pre-submission-container .submission_notification').addClass(response.type);
+                $('.pre-submission-container .submission_notification .info > h2').html(response.msg);
+                if(response.status.localeCompare('Accepted') == 0 || response.status.localeCompare('Presentation Error') == 0){
+                    $('.pre-submission-container .submission_notification').removeClass('error');
+                    $('.pre-submission-container .submission_notification').addClass('success');
+                    $('.pre-submission-container .submission_notification .graphic img').attr('src','./images/svgs/happy.svg');
+                    $('.pre-submission-container .submission_notification .graphic .short-msg').html(response.status);
+                    $('.pre-submission-container .submission_notification .actions .other-info').html('<span> </span><span class="btns"><span class="button_red" onclick="closeEverythin()">Okay</span></span>');
+                }
+                else{
+                    $('.pre-submission-container .submission_notification').removeClass('success');
+                    $('.pre-submission-container .submission_notification').addClass('error');
+                    $('.pre-submission-container .submission_notification .graphic img').attr('src','./images/svgs/sad.svg');
+                    $('.pre-submission-container .submission_notification .graphic .short-msg').html(response.status);
+                    $('.pre-submission-container .submission_notification .actions .other-info').html('<span> </span><span class="btns"><span class="button_red" onclick="closeEverythin()">Okay</span></span>');
+                }
+                if(response.executiontime != undefined){
+                    var compile_con = $('<div class="form_content"></div>');
+                        compile_con.append('<label>Execution Time</label>');
+                        compile_con.append('<span>'+response.executiontime+' sec</span>');
+                        $('.pre-submission-container .submission_notification .actions .other-info > span:first-child').append(compile_con);
+                }
+                if(response.compile != undefined){
+                    var compile_con = $('<div class="form_content" style="grid-column: span 2"></div>');
+                        compile_con.append('<label>Compilation Command</label>');
+                        compile_con.append('<span>'+response.compile+'</span>');
+                        $('.pre-submission-container .submission_notification .actions .other-info > span:first-child').append(compile_con);
+                }
+                if(response.submsg != undefined){
+                    var compile_con = $('<div class="form_content" style="grid-column: span 3"></div>');
+                        compile_con.append('<label>Details</label>');
+                        compile_con.append('<span>'+response.submsg+'</span>');
+                        $('.pre-submission-container .submission_notification .actions .other-info > span:first-child').append(compile_con);
+                }
+            },1000);
+        }
+    });
+}
+
+function check_for_validity__program_name(){
+    var prg_name = $('.pre-submission-container .file-name-settings input#prg_name').val().trim().length;
+        var ext = $('.pre-submission-container .file-name-settings input#ext').val().trim().length;
+        if(prg_name > 0 && ext > 0){
+            $('.pre-submission-container .action-buttons-section button').removeAttr('disabled');
+        }
+        else{
+            $('.pre-submission-container .action-buttons-section button').attr('disabled','disabled');
+        }
+    
+    $('.pre-submission-container .file-name-settings input').keyup(function(){
+        var prg_name = $('.pre-submission-container .file-name-settings input#prg_name').val().trim().length;
+        var ext = $('.pre-submission-container .file-name-settings input#ext').val().trim().length;
+        if(prg_name > 0 && ext > 0){
+            $('.pre-submission-container .action-buttons-section button').removeAttr('disabled');
+        }
+        else{
+            $('.pre-submission-container .action-buttons-section button').attr('disabled','disabled');
+        }
+    });
+}
+
+function initializeAttributionsUI()
+{
+	var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
+			//'((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+			'((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+			'((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+			'(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+			'(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+			'(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+    $("#links").tagit({
+		afterTagAdded: function addTag (event,ui){
+			//alert("HOLA"+ui.tagLabel);
+			var urlTest = pattern.test(ui.tagLabel);
+			var currTag = ui.tagLabel;
+			
+		  //alert(urlTest);
+		  if(!urlTest)
+		  {
+			//alert('invalid URL:'+currTag);
+			  $('body').notification("error","invalid URL:"+currTag);
+			$('#links').tagit('removeTagByLabel', currTag);
+			//jQuery.Event("keydown", { keyCode: 20 });
+		  }
+		}
+	});
+}
